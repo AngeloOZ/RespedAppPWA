@@ -6,11 +6,189 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link.active_link_cs {
+  color: crimson;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.main_layout {
+  min-height: 400px;
+  background-color: #040404;
+  color: #fff;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+.circular-btn {
+  border-radius: 30px;
+}
+
+
+.summary-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.placeholder-item {
+  background: #282828;
+
+  animation-name: placeholder;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.customScrollBar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.customScrollBar ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.customScrollBar::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.customScrollBar::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.customScrollBar::-webkit-scrollbar-thumb {
+  background: #EC4D20;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+.customScrollBar::-webkit-scrollbar-thumb:hover {
+  background: #DF4013;
+}
+
+.customScrollBar::-webkit-scrollbar-thumb:active {
+  background: #EC4D20;
+}
+
+.customScrollBar::-webkit-scrollbar-track {
+  background: #020202;
+  border: 35px none #ffffff;
+  border-radius: 50px;
+}
+
+.customScrollBar::-webkit-scrollbar-track:hover {
+  background: #020202;
+}
+
+.customScrollBar::-webkit-scrollbar-track:active {
+  background: #020202;
+}
+
+.customScrollBar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+@keyframes placeholder {
+  0% {
+    background: #282828;
+
+  }
+
+  50% {
+    background: #1c1c1c;
+
+  }
+
+  100% {
+    background: #282828;
+
+  }
+}
+
+.toLowerCase {
+  text-transform: lowercase;
+}
+
+.toUpperCase {
+  text-transform: uppercase;
+}
+
+.toCapitalize {
+  text-transform: capitalize;
+}
+
+.modalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalItem {
+  background: #fff;
+  min-height: 300px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.itemModal {
+  width: 450px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  padding: 16px 32px 24px 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .itemModal {
+    width: 90%;
+    margin: auto;
+    padding: 16px 15px;
+  }
 }

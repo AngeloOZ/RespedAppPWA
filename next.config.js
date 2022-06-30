@@ -12,6 +12,9 @@ module.exports = withPWA({
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  images: {
+    domains: ['localhost', 'res.cloudinary.com', 'assets.website-files.com', "*"]
   }
 })
 
