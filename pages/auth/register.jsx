@@ -4,11 +4,10 @@ import { useRouter } from "next/router";
 
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../context";
+import { AuthLayout } from "../../components/layouts";
 
-import { FullScreenloader, Input } from "../../components/Components";
-import { AuthLayout } from "../../components/layouts/AuthLayout";
-import { RenderIf } from "../../components/Components/RenderIf";
-import { ListErrors } from "../../components/AuthComponents/ListErrors";
+import { ListErrors } from "../../components/AuthComponents";
+import { FullScreenloader, Input, RenderIf } from "../../components/Components";
 
 import css from "../../styles/Auth.module.scss";
 

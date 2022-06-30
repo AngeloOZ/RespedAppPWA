@@ -4,12 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 
-import { AuthContext } from "../../context/Auth";
-import { AuthLayout } from "../../components/layouts/AuthLayout";
-import { FullScreenloader, Input } from "../../components/Components";
+import { AuthContext } from "../../context";
+import { AuthLayout } from "../../components/layouts";
+import { FullScreenloader, Input, RenderIf } from "../../components/Components";
 import css from "../../styles/Auth.module.scss";
-import { RenderIf } from "../../components/Components/RenderIf";
-import { ListErrors } from "../../components/AuthComponents/ListErrors";
+import { ListErrors } from "../../components/AuthComponents";
 
 const styles = {
   marginLeft: "20px",
