@@ -104,7 +104,7 @@ export const getServerSideProps = async ({ req }) => {
   const { SESSION_ID: token } = req.cookies;
   try {
     const data = await jwt.isValidToken(token);
-    console.log(data);
+    
   } catch (error) {}
 
   return {

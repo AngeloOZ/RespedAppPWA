@@ -1,6 +1,6 @@
 {
   "name": "respedapp-frontend",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.4",
+    "eslint-config-next": "12.2.0",
     "node-sass": "^7.0.1",
     "sass": "^1.53.0"
   },
@@ -26,7 +26,7 @@
     "fslightbox-react": "^1.6.2-2",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
-    "next": "^12.1.4",
+    "next": "^12.2.0",
     "next-pwa": "^5.5.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

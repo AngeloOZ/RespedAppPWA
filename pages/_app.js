@@ -8,7 +8,9 @@ import "../styles/globalsAdmin.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
-  axios.defaults.baseURL = "https://respedapp.onrender.com/api";
+  // axios.defaults.baseURL = "https://respedapp.onrender.com/api";
+  axios.defaults.baseURL = "http://localhost:4000/api";
+
   if (Cookies.get("SESSION_ID")) {
     axios.defaults.headers.common["Authorization"] = `Bearer ${Cookies.get(
       "SESSION_ID"

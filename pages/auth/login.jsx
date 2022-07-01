@@ -7,8 +7,8 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../context";
 import { AuthLayout } from "../../components/layouts";
 import { FullScreenloader, Input, RenderIf } from "../../components/Components";
-import css from "../../styles/Auth.module.scss";
 import { ListErrors } from "../../components/AuthComponents";
+import css from "../../styles/Auth.module.scss";
 
 const styles = {
   marginLeft: "20px",
@@ -38,11 +38,12 @@ export default function Login() {
   const onLoginUser = async ({ username, password }) => {
     setDisplayLoader(true);
     const { hasError, response } = await loginUser(username, password);
+    console.log(response);
     if (hasError) {
       setDisplayLoader(false);
       setShowError(true);
       const sms =
-        typeof response.data == "string" ? response.data : response.message;
+        typeof response?.data == "string" ? response.data : response?.message;
       setShowMessageError(
         <ListErrors message={sms} errors={response?.errors || []} />
       );
